@@ -1,0 +1,296 @@
+/*/     Font Gasm   /*/
+/*    Theme:  a website designed for ####
+                Tier 3 client
+                Source: WOM
+*/
+/*
+Design :  a web app that allows for fonts to be pulled from Google Font, and arranged on screen to test font synergy
+
+THEME:
+
+Fonts:
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans|Exo|Questrial" rel="stylesheet">
+
+font-family: 'Encode Sans', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Montez', cursive;
+
+
+Colors: 
+#FF52525; dark plant
+#92FF92;  plant
+#65CC2D; core 
+#CC5C2D; brown
+#997B6E; orange
+
+#52ff79
+ 
+*/
+
+/*/     HTML    /*/
+html {
+color: #FF5252; 
+color: #92FF92;  
+color: #65CC2D; 
+color: #CC5C2D; 
+color: #997B6E;
+color: whitesmoke;
+}
+
+/* DEFINE GRID */
+
+body {
+    margin: 0;
+    opacity: .7;
+    background: black;
+    z-index: 5;
+    font-size: 16px;
+    color: white;
+}
+
+.grid {
+    display: grid; 
+     grid-gap: 10px;     
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas: 
+    "u u u u u u d d "
+    "u u u u u u d d "
+    "s s m m m m n n"
+    "s s m m m m n n"
+   " s s m m m m n n"
+   " s s c c c c c c c n"
+    "f f f f f f f f f f f f";
+}
+
+.upper {
+    grid-area: u;
+    grid-column: 1/8;
+    grid-row: 1/4;
+    z-index: 75;
+    border-bottom: 25px solid salmon;
+}
+
+.definition {
+    grid-area: d;
+    grid-column: 6/8;
+    grid-row: 1/2;
+}
+
+.selection {
+    grid-area: s;
+    grid-column: 1/2;
+    grid-row: 4/12;
+    padding: 100px;
+  
+}
+
+.main {
+    grid-area: m;
+    border-bottom: 25px solid  yellow;
+    grid-column: 3/7;
+    grid-row: 4/12;
+    padding: 100px;
+    margin-left: -5em;
+}
+
+.nav {
+    grid-area: n;
+    border-bottom: 25px solid  teal;
+    grid-column: 7/8;
+    grid-row: 4/12;
+    padding: 100px;
+}
+
+.code { 
+    grid-area: c;
+    border-bottom: 25px solid red;
+    grid-column: 3/7;
+    grid-row: 13/13;
+    padding: 100px;
+    border: 1px solid white;
+}
+
+.footer {
+    grid-area: f;
+    border-bottom: 25px solid orchid;
+    grid-column: 1/8;
+    grid-row: 14/14;
+    padding: 100px;
+}
+/*--------------------------------------------------------------*/
+
+/*   Defaults    */
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* Define Upper Logo/Banner */
+
+.mainGasm {
+    grid-area: upper;
+    z-index: 75;
+    width: 100%;
+    position: fixed;
+    height: 40vh;
+    margin-bottom: 1em;
+}
+
+.title {
+        float: left;
+        clear: both;
+        font-family: 'Montez', cursive;
+        font-size: 7em;
+        color: #ff5252;
+        z-index: 99;
+        background-blend-mode: overlay;
+        margin-left: 2em;
+        position: relative;
+        font-weight: 200;
+}
+
+.title2 {
+    font-family: 'Montez', cursive;
+    font-size: 3em;
+    color: blue;
+    z-index: 99;
+}
+
+.definition {
+    grid-area: d;
+    width: 19%;
+    float: right;
+    position: relative;
+    margin-right: 8em;
+    margin-left: -18em;
+    z-index: 1200;
+    color: white;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+}
+
+.gasm { 
+    font-weight:700;
+    text-shadow: 1px 1px 10px #CC5C2D;
+}
+
+#gasm {
+    width: 40px;
+    height: 40px;
+}
+
+/*/     Selection      /*/
+
+.selection { 
+    width: 100%;
+    margin: 1em;
+}
+
+.headingFont, .secondaryFont, .accentFont {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5em; 
+    padding-bottom: 1em;
+    padding-top: .5em;  
+    margin-left: -2em;
+}
+
+select {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 15px;
+    background: transparent;
+    margin-bottom: .5em;
+    color: #92FF92;
+    border: none;
+}
+
+/*/         Navigation      /*/
+
+.nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1em;
+}
+
+.nav {
+    font-family: 'Exo', sans-serif;
+    font-size: 1.3em;
+    margin-left: -3em;
+    width: 100%;
+}
+
+ul {
+    margin-left: -5em;
+}
+
+.instructions {
+    font-family: 'Montez', cursive;
+    color: #65cc2d;
+    font-size: 5em;
+    font-weight: 200;
+    margin: 0;
+}
+
+.introduction {
+    font-size: 1.7em;
+    font-family: 'Questrial', sans-serif;
+    margin-left: -2em;
+}
+
+
+/*/         Selection Box        /*/
+form h3 {
+    font-family: 'Montez', cursive;
+    font-size: 5em;
+    margin-bottom: 0.1em;
+    font-weight: 300;
+    color: #CC5C2D;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 100;
+}
+
+.small {
+    font-size: 1em
+}
+
+.medium {
+    font-size: 3.5em;
+}
+
+.big {
+    font-size: 5em;
+   }
+
+label {
+    margin-left: 2em;
+}
+
+.fontSize {
+    margin-left: 2em;
+}
+
+
+/*/            Code                   /*/
+.code {
+    border: 2px inset #CC5C2D;
+}
+
+.innerCode {
+    padding: 15px;
+    border: 2px outset #65CC2D;
+}
+code {
+  
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1em;
+}

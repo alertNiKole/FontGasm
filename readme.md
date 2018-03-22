@@ -7,7 +7,7 @@ This app will take fonts from Google Fonts and pair them based on user selection
 
 The Dev will then also be able to grab the font pairings code for use in their project.
 
-This is different from Google Fonts in that it allows them to use the fonts by choice instead of by recommended font. 
+This will couple well with Google Fonts in that it allows them to use the fonts by choice instead of only being able to see the recommended fonts on the site. You can choose up to 3 font pairings and place them into various element blocks. 
 
 ## Tools:
 
@@ -33,14 +33,14 @@ Node
 ## Source Data
 
 Pull from Google Font API
-
-[Google Font Developer API]("https://developers.google.com/fonts/docs/developer_api")
+    
+### [Google Font Developer API]("https://developers.google.com/fonts/docs/developer_api")
 
 ## Source Control
 GitHub will be used for source control.
 ### [Repo Link]("https://github.com/alertNiKole/FontGasm.git")
-##
-##
+
+
 ## Long Description
 This is a font pairing tool that allows you to pull from Google Fonts and put your choice of fonts onscreen for use in your app.  It is directed towards web and ui developers. 
 
