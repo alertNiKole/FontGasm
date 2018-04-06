@@ -44,3 +44,31 @@ GitHub will be used for source control.
 ## Long Description
 This is a font pairing tool that allows you to pull from Google Fonts and put your choice of fonts onscreen for use in your app.  It is directed towards web and ui developers. 
 
+### Process Outline
+
+#### Phase 1 
+- Select Google Font & Size -> page load initiates API call, backend prepopulates using Google Font API, stored in local if needed Mongo
+
+#### Phase 2 
+- Display Onscreen --> Once selected (size) then Main display updates with the selected size, font-family. and lorem wording. [user previews]
+
+#### Phase 3 
+- Asyncronously the data also populates with the correct code to port to the users website in 2 parts:
+    style link 
+    font families 
+
+#### Phase 4 
+- Reset - resetting the page will create a reset to all set values replacing the lorem inserts with a new dataset.
+
+This means that all data on the main component will have 3 states-
+    -   1. Starting/initial hidden
+    -   2. Preview (showing the font)
+    -   3. Reset (user already been active, knows how to use)
+
+#### CRUD
+C - reate  call
+R - ead post/return -->select
+U - pdate -- no changes will happen in other words, update could be changing the requested font but not actually changing the font in the API (because you can't and that would be silly)
+D - delete -- nothing will be allowed to be deleted only reset
+
+#### Optional: Font Selector displays the actual font of the font being displayed in the selector box...makes sense, read it slow.
