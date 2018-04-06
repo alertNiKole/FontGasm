@@ -1,0 +1,8 @@
+# GitIgnore
+
+## These files will be ignored on load to GitHub
+
+### Internal
+
+/.ignore*
+/text.txt
