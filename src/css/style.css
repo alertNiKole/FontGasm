@@ -54,6 +54,7 @@ body {
      grid-gap: 10px;     
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(2, 100px);
+    /*
     grid-template-areas: 
     "u u u u u u d d "
     "u u u u u u d d "
@@ -61,15 +62,20 @@ body {
     "s s m m m m n n"
    " s s m m m m n n"
    " s s c c c c c c c n"
-    "f f f f f f f f f f f f";
+    "f f f f f f f f f f f f"; */
+
+    grid-template-areas:
+    "u u u u u u d d "
+    "s s m m m m n n"
+    " s s c c c c c c c n"
+    "f f f f f f f f f f f f"; 
 }
 
 .upper {
     grid-area: u;
     grid-column: 1/8;
     grid-row: 1/4;
-    z-index: 75;
-    border-bottom: 25px solid salmon;
+
 }
 
 .definition {
@@ -81,9 +87,8 @@ body {
 .selection {
     grid-area: s;
     grid-column: 1/2;
-    grid-row: 4/12;
-    padding: 100px;
-  
+    grid-row: 5/12;
+    padding: 50px;
 }
 
 .main {
@@ -129,13 +134,17 @@ a {
 /* Define Upper Logo/Banner */
 
 .mainGasm {
-    grid-area: upper;
-    z-index: 75;
-    width: 100%;
-    position: fixed;
-    height: 40vh;
-    margin-bottom: 1em;
-}
+
+        grid-area: upper;
+        z-index: 75;
+        width: 100%;
+        position: fixed;
+        height: 30vh;
+        max-height: 30vh;
+        padding-bottom: 5px;
+        /* margin-bottom: 1em; */
+        border-bottom: 15px double #fa8072;
+    }
 
 .title {
         float: left;
@@ -146,7 +155,7 @@ a {
         z-index: 99;
         background-blend-mode: overlay;
         margin-left: 2em;
-        position: relative;
+        position: fixed;
         font-weight: 200;
 }
 
@@ -161,15 +170,17 @@ a {
     grid-area: d;
     width: 19%;
     float: right;
-    position: relative;
-    margin-right: 8em;
-    margin-left: -18em;
-    z-index: 1200;
-    color: white;
+    position: fixed;
+    clear: left;
+    z-index: 1000;
+    color: #fff;
     font-family: 'Encode Sans', sans-serif;
     font-size: 1em;
     text-align: center;
     line-height: 2;
+    top: 0;
+    left: auto;
+    right: 6em;
 }
 
 .gasm { 
@@ -253,10 +264,33 @@ form h3 {
     margin: 0;
 }
 
+fieldset {
+padding: 3em 1.75em 0 1.75em;
+    border-top-left-radius: 35em;
+    border-top-right-radius: 35em;
+    border: 6px double #FF5722;
+}
+
 legend {
     font-size: 1.5em;
     text-align: center;
     font-weight: 100;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form div legend {
+    color: #FF5252; 
+}
+
+select option {
+    padding:5px;
+    border-bottom: 1px solid #585858
+}
+.sizeWrapperOne, .sizeWrapperTwo, .sizeWrapperThree {
+   color: #CC5C2D; 
 }
 
 .small {
@@ -293,4 +327,10 @@ code {
   
     font-family: 'Encode Sans', sans-serif;
     font-size: 1em;
+    color: #FF5252; 
+    color: #92FF92;  
+    color: #65CC2D; 
+    color: #CC5C2D; 
+    color: #997B6E;
+    color: whitesmoke;
 }
