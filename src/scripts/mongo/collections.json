@@ -1,0 +1,25 @@
+collections:
+
+db.createCollection(<name>, { capped: <boolean>,
+                              autoIndexId: <boolean>,
+                              size: <number>,
+                              max: <number>,
+                              storageEngine: <document>,
+                              validator: <document>,
+                              validationLevel: <string>,
+                              indexOptionDefaults: <document>,
+                              viewOn: <string>,
+                              pipeline: <pipeline>,
+                              collation: <document> } )
+db.createCollection(fields, {
+    kind:,
+    family:
+    
+}
+ kind: The kind of object, a webfont object
+family: The name of the family
+subsets: A list of scripts supported by the family
+variants: The different styles available for the family
+version: The font family version.
+lastModified: The date (format "yyyy-MM-dd") the font family was modified for the last time.
+files: The font family files (with all supported scripts) for each one of the available variants.
