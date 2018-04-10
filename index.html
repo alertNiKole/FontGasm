@@ -61,86 +61,31 @@ a set of type of one particular @font-face and size causing a climax of extreme 
 </div>
 
 
-
-
-<div class="selection selectFont">
-  <form class="clickTest" name="test" action="javascript: hi()" enctype="multipart/form-data">
-      <div>
-       <button class="clickHere" >YOOOO!!!</button>
-    </div>
-  </form>
+<div class="selection">
   <form name="fontSelect" action="input url" method="GET">
-    <h3>FourPlay</h3>
+    <h3>&nbsp; ForePlay</h3>
     <fieldset >
       <legend>
-        <h4>Select Your Options</h4>
-      </legend><div>
-      <legend>Select Your First Font
-      <select name="fontListOne">
-        <option value="DNU">Font One</option>
-        <option value="testSingle">"NiKolaPlatinum", san-serif</option> <!-- remove before prod -->
+        <h4>Play With Your Options</h4>
+      </legend>
+      <div>
+      <legend>Choose Your Font
+      <select onclick="click" name="fontListOne" id="fonts"> 
+        <option value="default"> One</option>
+        <option value="testSingle">single</option> <!-- remove before prod -->
         <option value="selectListOne"></option>
       </select>
         <div class="sizeWrapperOne">
-          <input class="big" type="radio" name="size" value="large" > Large Font<br>
-          <input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
-          <input class="small" type="radio" name="size" value="small" > Small Font
+          <input class="big" type="radio" name="size" value="large" > Large <br>
+          <input class="medium" type="radio" name="size" value="medium" > Medium  <br> 
+          <input class="small" type="radio" name="size" value="small" > Small
       </div>
+      <button class="reset">RESET</button>
       </legend>
     </div>
-        <!-- Second -->
-      <div>
-        <legend>Select Your Second Font
-            <select name="fontListTwo">
-              <option value="DNU">Font Two</option>
-              <option value="testSingle">"NiKolaPlatinum", san-serif</option> <!-- remove before prod -->
-              <option value="selectListTwo"></option>
-            </select>
-              <div class="sizeWrapperTwo">
-                <input class="big" type="radio" name="size" value="large" > Large Font<br>
-                <input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
-                <input class="small" type="radio" name="size" value="small" > Small Font
-            </div>
-            </legend>
-          </div>
-            <!--Third -->
-          <div>
-            <legend>Select Your Third Font
-                <select name="fontListThree">
-                  <option value="DNU">Font Three</option>
-                  <option value="testSingle">"NiKolaPlatinum", san-serif</option> <!-- remove before prod -->
-                  <option value="selectListThree"></option>
-                </select>
-                  <div class="sizeWrapperThree">
-                    <input class="big" type="radio" name="size" value="large" > Large Font<br>
-                    <input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
-                    <input class="small" type="radio" name="size" value="small" > Small Font
-                </div>
-                <button class="render" onclick="javascript:hi"></button>
-                </legend>
-              </div>
     </fieldset>
   </form>
 </div>
-
-<!--
-<div class="selection">
-<form name="fontSelect">
-  <h3> FourPlay</h3>
-  <legend>Choose your Google Fonts to initiate your gasm.</legend>
-<div class="headingFont">
-<select>
-<option value="choice1" disabled selected>Choose your Google Font</option>
-<option value="1">Font 1</option>
-<input class="big" type="radio" name="size" value="large" > Large Font<br>
-<input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
-<input class="small" type="radio" name="size" value="small" > Small Font
-</select>
-</div>
-<button class="reset">RESET</button>
-</form>
-</div>
--->
 
 <!-- Navigation -->
 <div class="nav">
@@ -155,6 +100,12 @@ a set of type of one particular @font-face and size causing a climax of extreme 
 <div class="main">
   <h2 class="instructions">Take Your Time</h2>
 <p class="introduction">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut libero deserunt nemo quasi numquam molestiae cupiditate accusantium minima modi! Modi recusandae consequatur, quae labore praesentium beatae porro mollitia repellat perferendis totam! Provident laboriosam, sit ipsum veritatis vitae ab ipsa eos illum, quam cumque facilis accusamus fugit tenetur vel earum quidem labore. Animi reiciendis ipsa praesentium nam eos, fugit accusantium minus corporis sed perspiciatis dolorum necessitatibus, ipsum quidem quisquam distinctio aspernatur?. </p>
+<div class="showContainer">
+  <div class="showAllFonts">
+
+  </div>
+  <button id="showButton" onclick="showAllFontsF()">Show All Available Fonts</button>
+</div>
 <h1> Heading H1 </h1>
 <h2> Heading H2 </h2>
 <h3> Heading H3 </h3>
@@ -174,7 +125,6 @@ script will generate here for you to take to your site.
 </div>          
 </div>
 <div class="fontListing" hidden>
-
 </div>
 <div class="footer">footer</div>
 </div>

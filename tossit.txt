@@ -1,0 +1,55 @@
+        <!-- Second 
+      <div>
+        <legend>Select Your Second Font
+            <select name="fontListTwo">
+              <option value="DNU">Font Two</option>
+              <option value="testSingle">"NiKolaPlatinum", san-serif</option>  remove before prod 
+              <option value="selectListTwo"></option>
+            </select>
+              <div class="sizeWrapperTwo">
+                <input class="big" type="radio" name="size" value="large" > Large Font<br>
+                <input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
+                <input class="small" type="radio" name="size" value="small" > Small Font
+            </div>
+            </legend>
+          </div>
+        -->          
+            <!--Third -->
+ <!--         <div>
+            <legend>Select Your Third Font
+                <select name="fontListThree">
+                  <option value="DNU">Font Three</option>
+                  <option value="testSingle">"NiKolaPlatinum", san-serif</option> <!-- remove before prod
+                  <option value="selectListThree"></option>
+                </select>
+                  <div class="sizeWrapperThree">
+                    <input class="big" type="radio" name="size" value="large" > Large Font<br>
+                    <input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
+                    <input class="small" type="radio" name="size" value="small" > Small Font
+                </div>
+                <button class="render" onclick="javascript:hi"></button>
+                </legend>
+              </div>
+      </fieldset>
+    </form>
+  </div>
+          
+-->
+<!--
+<div class="selection">
+<form name="fontSelect">
+  <h3> FourPlay</h3>
+  <legend>Choose your Google Fonts to initiate your gasm.</legend>
+<div class="headingFont">
+<select>
+<option value="choice1" disabled selected>Choose your Google Font</option>
+<option value="1">Font 1</option>
+<input class="big" type="radio" name="size" value="large" > Large Font<br>
+<input class="medium" type="radio" name="size" value="medium" > Medium Font<br> 
+<input class="small" type="radio" name="size" value="small" > Small Font
+</select>
+</div>
+<button class="reset">RESET</button>
+</form>
+</div>
+-->

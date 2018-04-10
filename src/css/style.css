@@ -43,7 +43,7 @@ color: whitesmoke;
 body {
     margin: 0;
     opacity: .7;
-    background: black;
+    background: #292a2b;    
     z-index: 5;
     font-size: 16px;
     color: white;
@@ -87,7 +87,7 @@ body {
 .selection {
     grid-area: s;
     grid-column: 1/2;
-    grid-row: 5/12;
+    grid-row: 4/12;
     padding: 50px;
 }
 
@@ -144,6 +144,7 @@ a {
         padding-bottom: 5px;
         /* margin-bottom: 1em; */
         border-bottom: 15px double #fa8072;
+        opacity: .4;
     }
 
 .title {
